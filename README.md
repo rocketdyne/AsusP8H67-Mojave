@@ -46,7 +46,7 @@ Download the following kext and copy them (Release version) on EFI/CLOVER/kexts/
 - [AppleALC](https://github.com/acidanthera/applealc/releases)
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
 - [Lilu](https://github.com/acidanthera/lilu/releases)
-- [VirtualSMC] with SMCProcessor and SMCSuperIO (https://github.com/acidanthera/VirtualSMC/releases)
+- [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases) together with SMCProcessor and SMCSuperIO
 - [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X)
 
 Download [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
