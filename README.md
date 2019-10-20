@@ -60,7 +60,7 @@ Connect the Target Hard Drive on which Mojave will be installed and the two USB 
 
 ## 5. Post installation
 
-- In order to boot without the need of Clover USB Drive, repeat steps 3 and 4 using the Target Hard Drive on which Mojave has been installed as target. After completing these steps, the Mojave Hard Drive can also be set as primary boot device in BIOS settings.
+- In order to boot without the need of Clover USB Drive, repeat steps 2 and 3 using the Target Hard Drive on which Mojave has been installed as target. After completing these steps, the Mojave Hard Drive can also be set as primary boot device in BIOS settings.
 
 - [Disable hibernation](https://osxlatitude.com/forums/topic/9966-how-do-i-disable-hibernation-for-sleep/
 )
