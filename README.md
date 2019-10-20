@@ -49,7 +49,7 @@ Download the following kexts and copy them (Release version) to EFI/CLOVER/kexts
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases) together with SMCProcessor and SMCSuperIO
 - [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X)
 
-Copy the config.plist file attached in this repository on EFI/COLVER
+Copy the config.plist file attached in this repository on EFI/CLOVER
 
 Download [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
 Open the config.plist with Clover Configurator, in the SMBIOS tab set iMac 17.1 with the two arrows button on the right and save (CMD+S or File/Save in the top menu).
@@ -77,8 +77,8 @@ I have applied the following common suggested patches:
   - "6-Series USB"
   - "Fix Mutex with non-zero SyncLevel"
   - "Add IMEI"
-  - "USB3_PRW 0X0D" (this in particular resolves istant wake problem)
+  - "USB3_PRW 0X0D" (this in particular resolves instant wake problem)
 
-- If you plan to use your Apple ID with this machine, I suggest to follow [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) (at least!).
+- If you plan to sign in with your Apple ID on this machine, I suggest to follow [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) (at least!).
 
 
