@@ -62,22 +62,22 @@ Connect the Target Hard Drive on which Mojave will be installed and the two USB 
 
 - In order to boot without the need of Clover USB Drive, repeat steps 3 and 4 using the Target Hard Drive on which Mojave has been installed as target. After completing these steps, the Mojave Hard Drive can also be set as primary boot device in BIOS settings.
 
--[Disable hibernation](https://osxlatitude.com/forums/topic/9966-how-do-i-disable-hibernation-for-sleep/
+- [Disable hibernation](https://osxlatitude.com/forums/topic/9966-how-do-i-disable-hibernation-for-sleep/
 )
 - Disable "wake for network access" and "put hard disk to sleep when possbile" in Preferences/EnergySaver
 
 - If you incur in instant wakes after sleep (but also if you don't) I suggest to patch DSDT using [this guide](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/).
 I have applied the following common suggested patches:
- - "Fix WAK Arg0 v2"
- - "HPET Fix"
- - "SMBUS Fix"
- - "IRQ Fix"
- - "RTC Fix"
- - "OS Check Fix" (Win7)
- - "6-Series USB"
- - "Fix Mutex with non-zero SyncLevel"
- - "Add IMEI"
- - "USB3_PRW 0X0D" (this in particular resolves istant wake problem)
+  - "Fix WAK Arg0 v2"
+  - "HPET Fix"
+  - "SMBUS Fix"
+  - "IRQ Fix"
+  - "RTC Fix"
+  - "OS Check Fix" (Win7)
+  - "6-Series USB"
+  - "Fix Mutex with non-zero SyncLevel"
+  - "Add IMEI"
+  - "USB3_PRW 0X0D" (this in particular resolves istant wake problem)
 
 - If you plan to use your Apple ID with this machine, I suggest to follow [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) (at least!).
 
