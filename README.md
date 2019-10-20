@@ -66,7 +66,7 @@ Connect the Target Hard Drive on which Mojave will be installed and the two USB 
 )
 - Disable "wake for network access" and "put hard disk to sleep when possbile" in Preferences/EnergySaver
 
-- If you incur in instant wakes after sleep (but also if you don't) I suggest to patch DSDT using [this guide](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/).
+- If you have instant wakes after sleep (but also if you don't) I suggest to patch DSDT using [this guide](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/).
 I have applied the following common suggested patches:
   - "Fix WAK Arg0 v2"
   - "HPET Fix"
