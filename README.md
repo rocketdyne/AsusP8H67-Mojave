@@ -42,11 +42,43 @@ After installation, the USB EFI partition (EFI) should be automatically mounted 
 
 ## 3. Configure the EFI
 
-Download the following kext and copy them (Release version) on EFI/CLOVER/kexts/Other:
+Download the following kexts and copy them (Release version) to EFI/CLOVER/kexts/Other:
 - [AppleALC](https://github.com/acidanthera/applealc/releases)
 - [WhateverGreen](https://github.com/acidanthera/WhateverGreen/releases)
 - [Lilu](https://github.com/acidanthera/lilu/releases)
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC/releases) together with SMCProcessor and SMCSuperIO
 - [RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X)
 
+Copy the config.plist file attached in this repository on EFI/COLVER
+
 Download [Clover Configurator](https://mackie100projects.altervista.org/download-clover-configurator/)
+Open the config.plist with Clover Configurator, in the SMBIOS tab set iMac 17.1 with the two arrows button on the right and save (CMD+S or File/Save in the top menu).
+
+## 4. Install Mac OS
+
+Connect the Target Hard Drive on which Mojave will be installed and the two USB Drives to the Asus computer. Press F8 on startup and select the USB (UEFI) on which Clover bootloader has been installed. Launch the installation from the Mojave USB Drive, format the target Hard Drive with Disk Utility and start the Mojave Installer. During the installation process the computer will be restarted a couple of times: be sure to boot with the Clover USB and select the Target Hard Drive every time. If you have errors similar to  “error loading kernel cache (0x9)” just reboot.
+
+## 5. Post installation
+
+- In order to boot without the need of Clover USB Drive, repeat steps 3 and 4 using the Target Hard Drive on which Mojave has been installed as target. After completing these steps, the Mojave Hard Drive can also be set as primary boot device in BIOS settings.
+
+-[Disable hibernation](https://osxlatitude.com/forums/topic/9966-how-do-i-disable-hibernation-for-sleep/
+)
+- Disable "wake for network access" and "put hard disk to sleep when possbile" in Preferences/EnergySaver
+
+- If you incur in instant wakes after sleep (but also if you don't) I suggest to patch DSDT using [this guide](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/).
+I have applied the following common suggested patches:
+ - "Fix WAK Arg0 v2"
+ - "HPET Fix"
+ - "SMBUS Fix"
+ - "IRQ Fix"
+ - "RTC Fix"
+ - "OS Check Fix" (Win7)
+ - "6-Series USB"
+ - "Fix Mutex with non-zero SyncLevel"
+ - "Add IMEI"
+ - "USB3_PRW 0X0D" (this in particular resolves istant wake problem)
+
+- If you plan to use your Apple ID with this machine, I suggest to follow [this guide](https://www.tonymacx86.com/threads/an-idiots-guide-to-imessage.196827/) (at least!).
+
+
